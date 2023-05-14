@@ -1,6 +1,7 @@
 // 백준 2309 일곱난쟁이
-// https://www.acmicpc.net/problem/2309
-// 순열을 할때는 항상 sort()!!
+
+
+
  
 #include <bits/stdc++.h>
 using namespace std;

@@ -4,35 +4,27 @@
 #include <bits/stdc++.h>
 using namespace std; 
 
-int num;
-vector<string> players;
+string str,ret;
+int num, cnt[26];
 
-void solve(){
-	for(int i = 0; i < 5; i++)
-		players
-}
-void print(){
-	for(int i = 0; i < 5; i++)
-		cout << players[i] << '\n';
-}
-void makePermutation(int n, int r, int depth){
-	if(r==depth){
-		print();
-		return;
-	}
-//	sort(players);
-	for(int i = 0; i < n; i++){
-		swap(players[i],players[depth]);
-		makePermutation(n,r,depth+1);
-		swap(players[i],players[depth]);
-	}
-}
 int main(){	
-	string str;
 	cin >> num;
+	
 	for(int i = 0; i < num; i++){
 		cin >> str;
-		players.push_back(str);
+		cnt[str[0]-'a']++;
 	}
-	makePermutation(num,5,0);
+	
+	for(int i = 0; i< 26; i++){
+		if(cnt[i]>=5){
+			ret += (i + 'a');
+		}
+	}
+	
+	if(ret.size())
+		cout << ret;
+ 	else
+ 		cout << "PREDAJA";
+ 		
+	return 0;
 }
