@@ -24,6 +24,7 @@ void go(int x, int y){
 	
 	
 int main(){
+	
 	for(int i = 0; i < V; i++){
 		for(int j = 0; j < V; j++){
 			cin >> a[i][j];
