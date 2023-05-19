@@ -13,7 +13,7 @@ int main(){
 	vector<int> a = {1,2,3,100,200};
 	sort(a.begin(), a.end());
 	do{
-		for(int i = 0; i<2; i++){
+		for(int i = 0; i<5; i++){
 			cout << a[i] << " ";
 		}
 //		for(int i :a ) cout << i << ' ';
