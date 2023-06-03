@@ -6,7 +6,7 @@ using namespace std;
 int n,c;
 int a[1004];
 map<int,int> mp, mp_first;
-
+vector<pair<int, int>> v; 
 bool cmp(pair<int,int> a, pair<int,int>b){
 	if(a.first==b.first){
 		return mp_first[a.second]<mp_first[b.second];
